@@ -1,0 +1,88 @@
+h1,h2,p{
+    text-align:center;
+  }
+  /* An id selector is defined by placing the hash symbol # directly in front of the element's id value*/
+  /*You can give your menu some space between the content and the sides with various padding properties*/
+  /*dd a max-width property to the menu class with a value of 500px to prevent it from growing too wide*/
+  .menu{
+    width: 80%;
+    background-color:burlywood;
+    margin-left: auto;
+    margin-right:auto;
+    padding:20px;
+    max-width:500px;
+  }
+  body {
+  
+    background-image:url(https://cdn.freecodecamp.org/curriculum/css-cafe/beans.jpg) ;
+    font-family:sans-serif;
+    padding:20px;
+  }
+  .flavor, .dessert{
+    text-align:left;
+    width:75%;
+  }
+  .price{
+    text-align:right;
+    width:25%;
+  }
+  .item p{
+    display:inline-block;
+    margin-top:5px;
+  margin-bottom:5px;
+  font-size:18px;
+  }
+  h1,h2{
+    font-family: Impact, serif;
+  
+  }
+  .established { 
+    font-style: italic; 
+  }
+  h1{
+    font-size:40px;
+    /*The menu text CAMPER CAFE has a different space from the top than the address's space at the bottom of the menu. This is due to the browser having some default top margin for the h1 element.*/
+    margin-top:0;
+    /*o remove some of the vertical space between the h1 element and the text Est. 2020, change the bottom margin of the h1 to 15px.*/
+    margin-bottom:15px;
+  }
+  h2{
+    font-size:30px;
+}
+hr{
+    height:2px;
+    background-color:brown;
+    border-color:brown;
+  }
+  .bottom-line {
+    margin-top: 25px; 
+    }
+    /*FOOTER*/
+    footer{
+        font-size:14px;
+      }
+      a { 
+        color: black;
+         }
+         /*You change properties of a link when the link has actually been visited by using a pseudo-selector that looks like a:visited { propertyName: propertyValue; }.*/
+         a:visited{
+            color:black;
+          }
+          /*You change properties of a link when the mouse hovers over them by using a pseudo-selector that looks like a:hover { propertyName: propertyValue;*/
+          a:hover{
+            color:brown;
+          }
+          /*You change properties of a link when the link is actually being clicked by using a pseudo-selector that looks like a:active { propertyName: propertyValue; }*/
+          a:active{
+            color:brown;
+          }
+          /*To decrease the default margin space below the address p element, create a class selector named address and use the value 5px for the margin-bottom property*/
+          .address{
+            margin-bottom:5px;
+          }
+          /*here is an easier way, simply add a negative top margin to the img elements to pull them up from their current positions. Negative values are created using a - in front of the value. To complete this project, go ahead and use a negative top margin of 25px in the img type selector.*/
+          img { display: block; 
+            margin-left: auto; 
+            margin-right: auto;
+            margin-top:-25px;
+             }
